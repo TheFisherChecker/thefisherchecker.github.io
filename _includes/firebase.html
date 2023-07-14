@@ -1,0 +1,59 @@
+<script src=
+"https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+    </script>
+     
+     <script>
+        window.onload = function () {
+            var values = getLinkInfo();
+
+            saveMessage(values[0], values[1])
+
+            console.log('The page is ' + values[0] + ' and the id is ' + values[1])
+        }
+
+        function getLinkInfo() {
+            var siteLink = window.location.toString();
+            var linkArray = siteLink.split('/');
+            var identifier = linkArray[linkArray.length-1]
+            var identifierArray = identifier.split('?')
+            var page = identifierArray[0]
+            if (identifierArray.length > 1) {
+                var user = identifierArray[1]
+                if (user.length < 1) {
+                    user = 'unknown';
+                }
+            } else {
+                var user = 'unknown';
+            }
+
+            return [page, user]
+        }
+        
+    </script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCeJg8ENaMl4QsTx9M4_-I9Ym1Rgq-CRYQ",
+            authDomain: "fisher-tracking.firebaseapp.com",
+            databaseURL: "https://fisher-tracking-default-rtdb.firebaseio.com/",
+            projectId: "fisher-tracking",
+            storageBucket: "fisher-tracking.appspot.com",
+            messagingSenderId: "1045667567088",
+            appId: "1:1045667567088:web:f985e3c84dbe7579557935",
+            measurementId: "G-4JRHLK9RR5"
+        };
+ 
+        firebase.initializeApp(firebaseConfig);
+ 
+        var messagesRef = firebase.database()
+            .ref('Bruetten Campaign One');
+ 
+        // Save message to firebase
+        function saveMessage(page, user) {
+            var newMessageRef = messagesRef.push();
+            newMessageRef.set({
+                page: page,
+                user: user,
+            });
+        }
+    </script>

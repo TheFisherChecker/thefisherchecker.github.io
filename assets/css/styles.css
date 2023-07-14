@@ -1,0 +1,12 @@
+.forwarding {
+    font-size: 20pt;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Helvetica;
+}
+
+.forwarding_image {
+    margin: 100px auto;
+    display: block;
+}

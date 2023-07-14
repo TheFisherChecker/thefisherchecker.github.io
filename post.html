@@ -1,0 +1,198 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signal AG</title>
+    <link rel="stylesheet" href="/assets/css/post.css">
+    {% include analytics.html %}
+  </head>
+    <body class="login_background" data-accessibility="init" itemscope="" itemtype="http://schema.org/WebPage">
+
+
+        <div class="header-and-footer-css outerWrapper">
+            <div class="header-and-footer-css absoluteCenterWrapper">
+                <div class="absoluteCenter">
+                    <div class="sp-internet-header">
+                        <div class="sp-internet-header-middle">
+                            <div class="navigation_logo">
+                                <a class="navigation_logo-link" href="https://www.post.ch/de">
+                                    <img class="navigation_logo-image" src="assets/images/post-logo.svg" alt="Logo Die Post, zur Startseite" role="img">
+                                </a>
+                            </div>
+                            <div class="sp-internet-header-right">
+                                <div class="dropdown">
+                                    <button class="dropbtn">de</button>
+                                    <div class="arrow"></div>
+                                    <div class="dropdown-content" onpage="no">
+                                        <a id="lang-de" href="?lang=de" style="display: none;">DE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+        
+        
+        <div id="overlayMessage" class="overlay-container" style="display: none;" tabindex="0" role="region">
+            <div class="toast-top-right toast-container">
+                <div id="overlayMessageType" class="toast-error toast ">
+                    <button id="overlayMessageCloseButton" aria-label="Close" class="toast-close-button">
+                        <span></span>
+                    </button>
+                    <span id="overlayMessageText" class="toast-title ng-star-inserted"> </span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="login_content" class="single_column_container">
+            
+            <div id="main_content" class="row mx-mini">
+                <div class="col-12">
+                    <h1 class="d-none">Einloggen</h1>
+                    <form id="swissIdForm" method="POST" target="_self" action="       https://account.post.ch/idp/?login&amp;app=portal-delivery&amp;service=klp&amp;targetURL=https%3a%2f%2fwww.post.ch%2fde%2fkundencenter%2fkundencenter&amp;abortURL=https%3a%2f%2fwww.post.ch%2fde%2f
+        
+        
+        ">
+                        <div id="swissid-content-login" class="py-small-huge">
+                            <div class="">
+                                <button formnovalidate="" type="submit" id="externalIDP" name="externalIDP" value="externalIDP" data-klp-noautofocus="true" class="swissid-btn swissid-btn-primary swissid-btn-connect swissid-btn-connect-light">
+                                    <span class="connect" aria-hidden="true"></span>
+                                    <p>Login mit SwissID</p>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="mainForm" method="POST" target="_self" action="google.ch" novalidate="novalidate">
+                        <div id="section_login_collapsible" class="">
+                            <div style="width: 100%; height: 0.7em; border-bottom: 1px solid #CCCCCC; text-align: center">
+                                <span style="font-size: 1em; background-color: #FFFFFF; color: #666666" class="px-small-huge">
+                                    oder
+                                </span>
+                            </div>
+        
+                            <div class="">
+                                <div class="text-body mt-small-huge mb-large"><h5 class="text-left">Mit Kundenlogin Post</h5></div>
+                                <div class="p-t-large text-left">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <section>
+                                                <label class="fm_label" id="label_isiwebuserid" for="isiwebuserid">E-Mail</label>
+                                                <div class="input-group">
+                                                    <input aria-invalid="true" aria-labelledby="label_isiwebuserid" aria-multiline="false" aria-required="true" id="isiwebuserid" name="isiwebuserid" maxlength="254" placeholder="" required="required" role="textbox" type="email" autocomplete="username" value="
+        " class="form-control ng-untouched ng-pristine ng-invalid">
+        
+                                                </div>
+                                                <div id="likeValidationErrorUser" class="d-none">
+                                                    <div id="likeValidationErrorUserText">
+                                                        Bitte überprüfen Sie Ihre E-Mail-Adresse.
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="form-group">
+                                            <section>
+                                                <label class="fm_label" for="isiwebpasswd" id="password_label">Passwort</label>
+                                                <div class="input-group" id="show_hide_password">
+                                                    <input aria-invalid="false" aria-labelledby="password_label" aria-multiline="false" aria-required="true" id="isiwebpasswd" name="isiwebpasswd" placeholder="" required="required" role="textbox" type="password" maxlength="255" value="" autocomplete="current-password" class="login-password-field form-control ng-untouched ng-pristine ng-invalid" data-toggle="password">
+                                                    <button class="border-0 glyphicon glyphicon-eye-open form-control-feedback" role="button" tabindex="0"></button>
+                                                </div>
+                                                <div id="likeValidationErrorPwd" class="d-none">
+                                                    <div id="likeValidationErrorUserPwd">
+                                                        Bitte überprüfen Sie Ihr Passwort.
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+        
+                                        <div id="form-actions" class="sub-form-actions">
+        
+                                            <ul class="arrows-on-left-horizontal">
+                                                <li>
+                                                    <a id="forgotPwd-link" class="u_linkicon u_var_small" href="https://account.post.ch/recoveraccount/?app=portal-delivery&amp;profile=default&amp;accountType=B2C&amp;lang=de&amp;targetURL=https%3A%2F%2Fwww.post.ch%2Fde%2Fkundencenter%2Fkundencenter%3FinIframe%3Dfalse%26inMobileApp%3Dfalse&amp;abortURL=https%3A%2F%2Fwww.post.ch%2Fde%2F%3FinIframe%3Dfalse%26inMobileApp%3Dfalse&amp;service=klp&amp;inIframe=false
+        ">Passwort vergessen?</a>
+                                                </li>
+                                                    <li>
+                                                        <button formnovalidate="" type="submit" id="registration-link" name="registration" value="registration" class="btn btn-link p-0 mt-lg-mini-negative">
+                                                            Registrieren
+                                                        </button>
+                                                    </li>
+                                            </ul>
+        
+                                            <div class="row pb-large">
+                                                <div class="col-1 col-rg-4 order-rg-first d-xs-none d-rg-block">&nbsp;</div>
+                                                <div class="col-12 col-rg-4 pt-3 order-last order-rg-1 text-rg-right text-center">
+                                                    <a id="cancelOperationElement" class="cancel" href="https://www.post.ch/de/?inIframe=false&amp;inMobileApp=false&amp;lang=de
+        ">Abbrechen</a>
+                                                </div>
+                                                <div class="col-12 col-rg-4 order-first order-rg-last">
+                                                    <button class="btn btn-primary col-12" name="confirmLogin" id="actionLogin" type="submit"><span>Einloggen</span></button>
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </fieldset>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+                        
+                    </form>
+                </div>
+            </div>
+        
+            </div> 
+        
+        
+                            <section id="footer" class="header-and-footer-css footer ">
+                                <div id="info-overlay" class="footer-info-overlay" style="width: 1116px; height: 1130px;">
+                                    <div class="footer-info-overlay-content">
+                                        <button id="overlay-close-button" class="footer-info-overlay-button"></button>
+                                        <iframe id="overlay-iframe" class="footer-info-overlay-iframe" style="height: 100%;"></iframe>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                <div class="row text-left">
+                                    <div class="col-12">
+                                    <div class="col-12 mt-small-regular">
+                                        <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="pr-regular footerContact" id="footerContact" href="#">Kontakt</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="pr-regular footerInfo" id="footerInfo" href="#">Info</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item">
+                                            <a class="pr-regular" target="_blank" rel="noreferrer noopener" id="footerAccessibility" href="https://www.post.ch/de/pages/footer/barrierefreiheit-bei-der-post">Barrierefreiheit</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="pr-regular" target="_blank" rel="noreferrer noopener" id="footerGtc" href="https://www.post.ch/de/pages/footer/allgemeine-geschaeftsbedingungen-agb">AGB</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="pr-regular" target="_blank" rel="noreferrer noopener" id="footerLegalinfo" href="https://www.post.ch/de/pages/footer/datenschutz-und-rechtliches">Datenschutz und Rechtliches</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="" target="_blank" rel="noreferrer noopener" id="footerPdetail" href="https://www.post.ch/de/pages/footer/impressum">Impressum</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row text-left">
+                                    <div class="col-12">
+                                    <p class="col-12 mt-small-regular">
+                                        <strong>
+                                        ©
+                                            <span id="copyrightYear">2023</span>
+                                        Die Schweizerische Post AG
+                                        </strong>
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                               </body>
+    </html>
