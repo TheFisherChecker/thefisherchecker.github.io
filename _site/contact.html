@@ -23,8 +23,8 @@
             var values = getLinkInfo();
 
             saveMessage(values[0], values[1])
-
-            console.log('The page is ' + values[0] + ' and the id is ' + values[1])
+            
+            
         }
 
         function getLinkInfo() {
@@ -66,8 +66,11 @@
  
         // Save message to firebase
         function saveMessage(page, user) {
+            var d = new Date();
+            var date = d.toString();
             var newMessageRef = messagesRef.push();
             newMessageRef.set({
+                date: date,
                 page: page,
                 user: user,
             });
