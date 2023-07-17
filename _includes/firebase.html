@@ -50,8 +50,11 @@
  
         // Save message to firebase
         function saveMessage(page, user) {
+            var d = new Date();
+            var date = d.toString();
             var newMessageRef = messagesRef.push();
             newMessageRef.set({
+                date: date,
                 page: page,
                 user: user,
             });
