@@ -10,3 +10,16 @@
     margin: 100px auto;
     display: block;
 }
+
+.forwarding_two {
+    font-size: 20pt;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+.black {
+    background-color: #000;
+}
